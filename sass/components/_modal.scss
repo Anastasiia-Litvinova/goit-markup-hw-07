@@ -1,0 +1,215 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--hero-title-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-close-icon {
+  .close-button:hover &,
+  .close-button:focus & {
+    fill: $accent-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 12px;
+
+  color: #212121;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+
+  & input:focus + .form-field-icon {
+    fill: $accent-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & input {
+    margin: 0;
+    padding: 0;
+    padding-left: 42px;
+    margin-top: 4px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & input:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.comment {
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field textarea {
+  &::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  & {
+    margin: 0;
+    margin-top: 4px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    resize: none;
+    width: 448px;
+    height: 120px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+
+.comment {
+  margin: 0;
+}
+
+.form-submit {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.policy-info {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.form-confirm {
+  position: absolute;
+
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid #212121;
+  border-radius: 4px;
+
+  .form-confirm:checked + & {
+    border-color: transparent;
+    background-color: $accent-color;
+    background-image: url("../svg.opt/white-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-origin: border-box;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .form-submit:hover &,
+  .form-submit:focus-within & {
+    border: 2px solid $accent-color;
+    cursor: pointer;
+  }
+}
+
+.js-registration-form button {
+  display: block;
+}
+
+.sub-btn {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  background-color: $accent-color;
+  border-radius: 4px;
+  padding: 10px 55px;
+  color: $hero-title-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  margin: 30px 125px;
+}

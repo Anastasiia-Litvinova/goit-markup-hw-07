@@ -1,0 +1,53 @@
+.tasks {
+  padding-bottom: 94px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.pictures-list {
+  display: flex;
+  margin-top: 50px;
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.pictures-list-item {
+  width: 370px;
+}
+
+.pictures-list-photo {
+  display: block;
+}
+
+.pictures-list-item {
+  position: relative;
+}
+
+.pictures-list-box {
+  position: absolute;
+
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.pictures-list-text {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  padding: 27px 82px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $hero-title-color;
+}
