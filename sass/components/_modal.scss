@@ -28,7 +28,7 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  background: var(--hero-title-color);
+  background: $hero-title-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -180,7 +180,7 @@ form {
   .form-confirm:checked + & {
     border-color: transparent;
     background-color: $accent-color;
-    background-image: url("../svg.opt/white-tick.svg");
+    background-image: url("/img/svg.opt/white-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;

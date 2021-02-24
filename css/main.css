@@ -667,7 +667,7 @@ header > .container {
   right: 8px;
   width: 30px;
   height: 30px;
-  background: var(--hero-title-color);
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -809,7 +809,7 @@ form {
 .form-confirm:checked + .checkbox-icon {
   border-color: transparent;
   background-color: #2196f3;
-  background-image: url("../svg.opt/white-tick.svg");
+  background-image: url("/img/svg.opt/white-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
