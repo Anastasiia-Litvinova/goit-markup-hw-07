@@ -815,7 +815,7 @@ form {
 .form-confirm:checked + .checkbox-icon {
   border-color: transparent;
   background-color: #2196f3;
-  background-image: url("../../img/svg.opt/white-tick.svg");
+  background-image: url("/img/svg.opt/white-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
