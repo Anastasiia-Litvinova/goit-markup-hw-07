@@ -88,7 +88,8 @@ body {
   fill: currentColor;
 }
 
-.contact-link:hover, .contact-link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: #2196f3;
 }
 
@@ -97,7 +98,8 @@ body {
   display: flex;
 }
 
-.nav.link:hover, .nav.link:focus {
+.nav.link:hover,
+.nav.link:focus {
   color: #2196f3;
 }
 
@@ -194,7 +196,12 @@ header > .container {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bgImg.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/bgImg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -357,7 +364,8 @@ header > .container {
 
 .team-list > li {
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -417,7 +425,8 @@ header > .container {
   fill: #afb1b8;
 }
 
-.social-list-link:hover, .social-list-link:focus {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: #2196f3;
 }
 
@@ -468,7 +477,8 @@ header > .container {
   fill: #afb1b8;
 }
 
-.clients-list-link:hover, .clients-list-link:focus {
+.clients-list-link:hover,
+.clients-list-link:focus {
   border-color: #2196f3;
 }
 
@@ -486,7 +496,8 @@ header > .container {
   display: inline-block;
 }
 
-.footer-contact-link:hover, .footer-contact-link:focus {
+.footer-contact-link:hover,
+.footer-contact-link:focus {
   color: #2196f3;
 }
 
@@ -555,7 +566,8 @@ header > .container {
   fill: #ffffff;
 }
 
-.social-link:hover, .social-link:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: #2196f3;
 }
 
@@ -656,7 +668,8 @@ header > .container {
   width: 528px;
   height: 581px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
 }
@@ -815,7 +828,7 @@ form {
 .form-confirm:checked + .checkbox-icon {
   border-color: transparent;
   background-color: #2196f3;
-  background-image: url("/img/svg.opt/white-tick.svg");
+  background-image: url("../img/svg.opt/white-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
